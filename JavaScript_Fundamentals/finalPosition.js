@@ -1,4 +1,10 @@
-const moves = ['south', 'south', 'south', 'south', 'south', 'north','south']  
+const moves = [  'south',
+'south',
+'south',
+'south',
+'south',
+'north',
+'south'];  
 
 function finalPosition(input){
   let result = [0,0];
