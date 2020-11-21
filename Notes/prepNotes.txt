@@ -1,0 +1,173 @@
+JavaScript
+
+Let vs Var: (Best practice is using let)
+
+Let has block scoping but var doesn't have it
+----------
+parameter is always going to be a variable name and appears in the function declaration.
+argument is always going to be a value ( number, a string, a boolean, etc.)
+-----------
+
+Rest Parameters:
+
+function sendMail (day, ...mailId){
+sendMail.forEach(id => console.log(id));
+}
+sendMail('Monday', 1,2,3)
+---------------
+Equality Vs strict equality == ===
+
+== converts types to other type and the compares
+=== compares the type and value
+
+------------------
+If short forn : Ternary operator
+((5>55) ? 'Yes':'No');  (condition ? if : else)
+-----------------
+For short form ==> for of
+
+amount = [4,1,3,5]
+const total = 0;
+for (let amount of amounts) {
+  console.log(amount);
+}
+
+------------------------------
+Function Declaration:
+
+function calculator (id, name){}
+
+Function Expression:
+
+let calculator = function (id, name){}
+-------------------------------
+
+Expressions : produce immediate result
+Statements (functions, if-else, etc) do not produce any immediate value
+
+-------------------------
+Class and Constructor:
+
+class Car {
+    constructor (id) {
+        this.id = id;
+    }
+}
+let car = new Car(123);
+console.log(car.id);
+
+
+------------------
+Object:  is a key value set
+Var bird = new Object();
+var bird = {
+    Quote:"meme",
+    Family : birds,
+};
+
+bird.quote or bird["quote"]
+
+Array:
+
+var bird = [
+    'test',
+    'test1'
+];
+
+bird.push('test3');inserts end of array
+Bird.pop();removes end of the array
+bird.unshift(‘test1’); inserts into beginning of array;
+bird.shift(); removes beginning of array;
+bird.splice(index of start, howmany)=> bird.splice(2.1);
+
+--------------------------------------
+Hoisting :functions and variables are hoisted in JS; means they are available before the execution phase starts.
+Functions are already defined before the execution phase starts.
+Variables are set to undefined and will be only defined in the execution phase
+
+
+
+
+
+
+
+======================
+HTML:
+Element : <h1> onsor e asli
+Attribute <h1 id =''></h1>
+Global attributes : id, class, dir, lang
+----------------------
+A <div> is a block-level element that is commonly used to identify large groupings of content, and which helps to build a web page’s layout and design. 
+A <span>, on the other hand, is an inline-level element commonly used to identify smaller groupings of text within a block-level element.
+--------------------------
+If the content is being grouped solely for styling purposes and doesn’t provide value to the outline of a document, 
+use the <div> element.
+
+If the content adds to the document outline and it can be independently redistributed or syndicated, 
+use the <article> element.
+
+If the content adds to the document outline and represents a thematic group of content, 
+use the <section> element.
+
+-------------------------
+To open URL in a new window, the code would look like this:
+<a href="www.x.com" target="_blank">Shay Howe</a>
+----------------------
+We can create an on-page link by first setting an id attribute on the element we wish to link to, 
+then using the value of that id attribute within an anchor element’s href attribute.
+<body id="top">
+  ...
+  <a href="#top">Back to top</a>
+  ...
+</body>
+----------------------------
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=========================
+CSS:
+Inline & Block Elements: (display: inline, Block, Inline-Block)
+
+Inline like : <a>(anchor), <span> <strong>
+Block like: <p>, <h1>, <article>, <section>, <div>
+
+The Box model:
+Content box < Padding box < Border Box < Margin box
+Width, Height, Padding, Margin
+
+574959854

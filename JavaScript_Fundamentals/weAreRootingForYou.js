@@ -17,22 +17,17 @@ const vegetables = [
 ];
 
 const metric = 'redness';
-function judgeVegetable (vegetables, metric) {
-  let sRed = 0;
-  let tracker = [];
-  
-  for (let index = 0; index < vegetables.length; index++) {
-    let mine = Object.keys([index]);
-    if (mine[1] === metric){
-    const vegetable = vegetables[index].redness;
-    if (vegetable > sRed) {
-      sRed = vegetable;
-      tracker.push(index);
+const judgeVegetable = function (vegetables, metric) {
+  let name = "";
+  let val = 0;
+  for(let i = 0; i < vegetables.length; i++){
+    if(vegetables[i][metric] > val){
+      val = vegetables[i][metric];
+      name = vegetables[i].submitter;
     }
   }
-  }
-  let result = vegetables[(tracker.length-1)].submitter;
-  return result;
-  }
+
+  return name;
+}
 
 console.log(judgeVegetable(vegetables, metric));
