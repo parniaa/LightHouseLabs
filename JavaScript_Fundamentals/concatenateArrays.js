@@ -9,6 +9,3 @@ console.log(merge([ 0, 3, 1 ], [ 9, 7, 2 ]), "=?", [ 0, 3, 1, 9, 7, 2 ]);
 console.log(merge([], [ 9, 7, 2 ]), "=?", [ 9, 7, 2 ]);
 console.log(merge([ 5, 10 ], []), "=?", [ 5, 10 ]);
 
-while () {
-  
-}
