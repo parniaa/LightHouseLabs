@@ -11,6 +11,7 @@ function sumLargestNumbers(arr) {
     }
   }
   return maxNum + seconddMaxNum;
+  
 }
 console.log(sumLargestNumbers([1, 10]));
 console.log(sumLargestNumbers([1, 2, 3]));
