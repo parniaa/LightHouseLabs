@@ -1,10 +1,22 @@
 const urlEncode = function(text) {
   let results = text.split('');
-  for (const resut of results) {
-    if ( result === " ") {
-      resut
+    // console.log(results.length);
+  for (let index = 0; index < results.length; index++) {
+    var result = results[index];
+    if (result === ' ') {
+      results[index] = "%20";
+    } else {
+      results[index] = result;
     }
   }
+  if (results[0] === "%20") {
+    results[0] = '';
+  }
+  if (results[(results.length)-1] === "%20") {
+    results[(results.length)-1] = '';
+  }
+  var finalResults = results.join('');  
+  return finalResults;
 };
 
 console.log(urlEncode("Lighthouse Labs"));
