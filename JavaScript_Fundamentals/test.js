@@ -1,9 +1,4 @@
-n = "1122";
-function test(n) {
-  let g = n.split("");
-  return g;
-  for (let i = 0; index < digits.length; index++) {
-
-    
-  }
-}
+let a1 = [1,3,5];
+let a2 = a1;
+a1[1] = 4;
+console.log(a2);
