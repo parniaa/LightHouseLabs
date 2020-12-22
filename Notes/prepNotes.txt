@@ -21,6 +21,19 @@ Equality Vs strict equality == ===
 === compares the type and value
 
 ------------------
+In JavaScript, there are only eight values that are falsy. They are:
+
+    false
+    null
+    undefined
+    0
+    NaN
+    '' or ""
+    -0 (negative zero)
+    0n (BigInt zero)
+
+
+------------------
 If short forn : Ternary operator
 ((5>55) ? 'Yes':'No');  (condition ? if : else)
 -----------------
@@ -121,42 +134,6 @@ then using the value of that id attribute within an anchor element’s href attr
   ...
 </body>
 ----------------------------
-
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 =========================
