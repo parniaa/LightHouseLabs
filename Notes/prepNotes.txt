@@ -58,6 +58,12 @@ let calculator = function (id, name){}
 Expressions : produce immediate result
 Statements (functions, if-else, etc) do not produce any immediate value
 
+------------------------------
+The switch statement evaluates the provided expression (animal in our case) 
+and will execute the statement associated with the case that matches, 
+as well as the statements in all cases following the matching case 
+until reaching either the end of the switch statement or a break.
+
 -------------------------
 Class and Constructor:
 
