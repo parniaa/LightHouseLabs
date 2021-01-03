@@ -5,6 +5,7 @@ const sphereVolume = function (radius) {
   // Code here!
 }
 console.log(hi);
+console.log(hi);
 
 console.log(4186 < sphereVolume(10) && sphereVolume(10) < 4189);
 
