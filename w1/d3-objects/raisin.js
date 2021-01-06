@@ -9,7 +9,7 @@ const raisinAlarm = function(cookie) {
   if (flag) {
     return "All good";
   } else {
-    return "Raising Alert!";
+    return "Raisin Alert!";
   }
 
 };
@@ -20,9 +20,9 @@ const raisinAlarm = function(cookie) {
 const raisinAlarmArray = function(cookies) {
   let output = [];
   for (const cookie of cookies) {
-    
-    raisinAlarm(cookie);
+    output.push(raisinAlarm(cookie));
   }
+  return output;
 };
 console.log(raisinAlarmArray(
   [
