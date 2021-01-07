@@ -1,10 +1,18 @@
+// const findWaldo = function(names, found) {
+//   let i = 0;
+//   names.forEach(name =>{
+//     if (name === "Waldo") {
+//       found(i);
+//     }
+//     i++;
+//   });
+// };
+
 const findWaldo = function(names, found) {
-  let i = 0;
-  names.forEach(name =>{
+  names.forEach((name, index) => { 
     if (name === "Waldo") {
-      found(i);
+      found(index); //execute callback
     }
-    i++;
   });
 };
 
