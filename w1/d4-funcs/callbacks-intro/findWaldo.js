@@ -1,17 +1,25 @@
-const findWaldo = function(names, found) {
-  // for (let i = 0; i < names.length; i++) {
-  //   let name = names[i];
-  //   if (name === "Waldo") {
-  //     found(i);   // execute callback
-  //   }
-  // }
-  let i = 0;
-  names.forEach(name =>{
+// const findWaldo = function(names, found) {
+//   // for (let i = 0; i < names.length; i++) {
+//   //   let name = names[i];
+//   //   if (name === "Waldo") {
+//   //     found(i);   // execute callback
+//   //   }
+//   // }
+//   let i = 0;
+//   names.forEach(name =>{
 
+//     if (name === "Waldo") {
+//       found(i);
+//     }
+//     i++;
+//   });
+// };
+
+const findWaldo = function(names, found) {
+  names.forEach((name, index) => { 
     if (name === "Waldo") {
-      found(i);
+      found(index); //execute callback
     }
-    i++;
   });
 };
 
