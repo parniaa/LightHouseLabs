@@ -1,11 +1,9 @@
 const net = require('net');
 const { IP, PORT } = require('./constant');
-
-// const { stdin } = require('process');
 /**
  * Establishes connection with the game server
  */
-// `135.23.222.131`
+
 const connect = function() {
   const conn = net.createConnection({
     host: IP,
@@ -16,10 +14,7 @@ const connect = function() {
 
   conn.on('connect', () => {
     conn.write("Name: ARM");
-
-
     // conn.write("Move: down");
-
   });
   conn.on('data', (data) => {
     console.log(`Message from client: ${data}`, data);
@@ -28,18 +23,5 @@ const connect = function() {
   return conn;
 };
 
- 
-
-  // conn.on('connect', () => {
-  //   conn.write('Hello from client!');
-  // });
-  // // interpret incoming data as text
-  // conn.write(`it's me ${name}`);
-  
-  // stdin.on('data',(input) => {
-  //   conn.write(`${name} :${input}`);
-  // });
- 
-  
 
 module.exports = connect;
