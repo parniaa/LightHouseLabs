@@ -13,10 +13,9 @@ const connect = function() {
   conn.setEncoding('utf8');
 
   conn.on('connect', () => {
-    // conn.write("Arm");
-    console.log("aaa");
     conn.write("Name: ARM");
-    conn.write("Move: up");
+
+
     // conn.write("Move: down");
 
   });
