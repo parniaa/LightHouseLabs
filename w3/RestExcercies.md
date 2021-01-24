@@ -60,3 +60,10 @@ $ git commit –m "Some commit message"
 $ git checkout master
 $ git merge new-branch
 
+### VSCODE short cuts
+
+1. Deleting a Line => (Mac: Control + X)
+2. Add Cursor Above/Below => (Mac: Control + Option + Down Arrow)
+3. Move Line Up/Down => Mac: Option + Down Arrow
+4. Replace All Matching Occurrences of Text In The Current File => Mac: Control + F2
+5. Duplicate a line => (Mac: Control + Shift + D):
