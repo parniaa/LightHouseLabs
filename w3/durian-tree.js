@@ -28,6 +28,30 @@ class Employee {
   hasSameBoss(employee) {
     return this.boss === employee.boss;
   }
+  employeesThatMakeOver(amount) {
+
+    let employees = []; // 1
+
+    if (this.salary > amount) {
+      employees.push(this); // 2
+    }
+
+    for (const subordinate of this.subordinates) {
+      const subordinatesThatMakeOver = subordinate.employeesThatMakeOver(amount); // 3
+      employees = employees.concat(subordinatesThatMakeOver);
+    }
+
+    return employees;
+  }
+  get totalEmployees() {
+
+    let totalEmployees = 0; // 1
+
+    // Use depth first traversal to calculate the total employees
+
+    return totalEmployees;
+
+  }
 
 }
 const ada = new Employee("Ada", "CEO", 3000000.00);
@@ -56,7 +80,12 @@ console.log(phil.numberOfPeopleToCEO);
 //4. Same Boss Or Not
 console.log(phil.hasSameBoss(ada));
 
+//5. emp that makes more than
+let wealthyEmployees = ada.employeesThatMakeOver(418401);
+console.log(wealthyEmployees[0]);
 
+//6. Total num of emp
+console.log(ada.totalEmployees);
 
 
 
