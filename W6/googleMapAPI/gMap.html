@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <style type="text/css">
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 80%;
+        width: 70%;
+        margin: 0;
+        padding: 0;
+      }
+      #t1 {
+        display: flex;
+        flex-direction: column;
+      }
+      script {
+        width: 300px;
+        height: 150px;
+      }
+    </style>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        const tor = { lat: -15.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 6,
+          center:  tor,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+ 
+
+      }
+
+    </script>
+  </head>
+  <body id="t1">
+    <div>TEST</div>
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-xM4EJgE9n1LKdn2BJqssX80Kv_IgqRs&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <div>TEST</div>
+  </body>
+</html>
